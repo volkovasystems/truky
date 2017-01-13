@@ -1,0 +1,29 @@
+{
+  "name": "truky",
+  "version": "0.0.0",
+  "description": "Return keys with truthful values.",
+  "main": "truky.js",
+  "support": "truky.support.js",
+  "deploy": "truky.deploy.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "key",
+    "truthy",
+    "value",
+    "truky"
+  ],
+  "homepage": "https://github.com/volkovasystems/truky",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "protype": "^0.8.0"
+  }
+}
