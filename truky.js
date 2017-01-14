@@ -47,12 +47,14 @@
 
 	@include:
 		{
-			"protype": "protype"
+			"protype": "protype",
+			"truly": "truly"
 		}
 	@end-include
 */
 
 const protype = require( "protype" );
+const truly = require( "truly" );
 
 const truky = function truky( entity ){
 	/*;
@@ -71,7 +73,17 @@ const truky = function truky( entity ){
 	}
 
 	return Object.getOwnPropertyNames( entity )
-		.filter( ( key ) => { return protype( entity[ key ], BOOLEAN ) && entity[ key ]; } );
+		.filter( ( key ) => {
+			return protype( entity[ key ], BOOLEAN, STRING ) && truly( entity[ key ] );
+		} )
+		.map( ( key ) => {
+			if( protype( entity[ key ], STRING ) ){
+				return entity[ key ];
+
+			}else{
+				return key;
+			}
+		} );
 };
 
 module.exports = truky;
