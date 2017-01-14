@@ -74,7 +74,9 @@ const truky = function truky( entity ){
 
 	return Object.getOwnPropertyNames( entity )
 		.filter( ( key ) => {
-			return protype( entity[ key ], BOOLEAN, STRING ) && truly( entity[ key ] );
+			return protype( entity[ key ], BOOLEAN, STRING ) &&
+				truly( entity[ key ] ) &&
+				entity[ key ];
 		} )
 		.map( ( key ) => {
 			if( protype( entity[ key ], STRING ) ){

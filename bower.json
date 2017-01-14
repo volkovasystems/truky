@@ -1,6 +1,6 @@
 {
   "name": "truky",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Return keys with truthful values.",
   "main": "truky.js",
   "support": "truky.support.js",
