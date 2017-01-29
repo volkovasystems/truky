@@ -34,6 +34,9 @@
 			"file": "truky.js",
 			"module": "truky",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/truky.git",
 			"test": "truky-test.js",
