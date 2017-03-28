@@ -14,4 +14,5 @@ webpack \
 bower install \
 protype \
 truly \
---save
+--save \
+--force-latest
