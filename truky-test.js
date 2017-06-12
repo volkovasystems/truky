@@ -1,5 +1,7 @@
-"use strict";
 
+const assert = require( "assert" );
 const truky = require( "./truky.js" );
 
-console.log( truky( { "name": "simple" } ) );
+assert.deepEqual( truky( { "name": "simple" } ), [ "simple" ], "should be deeply equal" );
+
+console.log( "ok" );
