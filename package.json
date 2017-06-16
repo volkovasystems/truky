@@ -1,6 +1,6 @@
 {
   "name": "truky",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Return keys with truthful values.",
   "main": "truky.js",
   "support": "truky.support.js",
@@ -22,7 +22,8 @@
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
   "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
