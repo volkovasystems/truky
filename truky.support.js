@@ -34,11 +34,11 @@
               			"file": "truky.js",
               			"module": "truky",
               			"author": "Richeve S. Bebedor",
+              			"eMail": "richeve.bebedor@gmail.com",
               			"contributors": [
               				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
               				"Vinse Vinalon <vinsevinalon@gmail.com>"
               			],
-              			"eMail": "richeve.bebedor@gmail.com",
               			"repository": "https://github.com/volkovasystems/truky.git",
               			"test": "truky-test.js",
               			"global": true
@@ -83,7 +83,7 @@ var truky = function truky(entity) {
 		entity[key];
 	}).
 	map(function (key) {
-		if (protype(entity[key], STRING)) {
+		if (typeof entity[key] == "string") {
 			return entity[key];
 
 		} else {
