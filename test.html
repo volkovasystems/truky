@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>truky unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:truky</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./truky.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "truky unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.equal( truky( { } ).length == 0, true, "should be equal to true" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.deepEqual( truky( { "name": "simple" } ), [ "simple" ], "should be equal to [ 'simple' ]" );
-
-				assert.deepEqual( truky( function Hello( ){ } ), [ "Hello" ], "should be equal to [ 'Hello' ]" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
