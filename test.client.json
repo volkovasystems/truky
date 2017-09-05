@@ -1,0 +1,148 @@
+{
+	"state": {
+		"passed": 3,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-09-05T09:59:21.184Z",
+	"end": "2017-09-05T09:59:55.969Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "truky",
+			"duration": 0,
+			"start": "2017-09-05T09:59:55.605Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "truky",
+			"duration": 186,
+			"start": "2017-09-05T09:59:55.606Z",
+			"end": "2017-09-05T09:59:55.792Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-09-05T09:59:55.607Z",
+					"end": "2017-09-05T09:59:55.607Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "truky",
+					"associatedTest": "should return keys with truthful values"
+				},
+				{
+					"start": "2017-09-05T09:59:55.701Z",
+					"end": "2017-09-05T09:59:55.701Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "truky",
+					"associatedTest": "should return keys with truthful values"
+				},
+				{
+					"start": "2017-09-05T09:59:55.702Z",
+					"end": "2017-09-05T09:59:55.703Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "truky",
+					"associatedTest": "should return keys with truthful values"
+				},
+				{
+					"start": "2017-09-05T09:59:55.747Z",
+					"end": "2017-09-05T09:59:55.747Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "truky",
+					"associatedTest": "should return keys with truthful values"
+				},
+				{
+					"start": "2017-09-05T09:59:55.747Z",
+					"end": "2017-09-05T09:59:55.747Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "truky",
+					"associatedTest": "should return empty array"
+				},
+				{
+					"start": "2017-09-05T09:59:55.791Z",
+					"end": "2017-09-05T09:59:55.792Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "truky",
+					"associatedTest": "should return empty array"
+				},
+				{
+					"start": "2017-09-05T09:59:55.792Z",
+					"end": "2017-09-05T09:59:55.792Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "truky"
+				}
+			]
+		},
+		{
+			"name": "`truky( { 'name': 'simple' } )`",
+			"duration": 96,
+			"start": "2017-09-05T09:59:55.606Z",
+			"end": "2017-09-05T09:59:55.702Z",
+			"tests": [
+				{
+					"name": "should return keys with truthful values",
+					"start": "2017-09-05T09:59:55.607Z",
+					"end": "2017-09-05T09:59:55.701Z",
+					"duration": 94,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`truky( function Hello( ){ } )`",
+			"duration": 45,
+			"start": "2017-09-05T09:59:55.702Z",
+			"end": "2017-09-05T09:59:55.747Z",
+			"tests": [
+				{
+					"name": "should return keys with truthful values",
+					"start": "2017-09-05T09:59:55.702Z",
+					"end": "2017-09-05T09:59:55.747Z",
+					"duration": 45,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`truky( { } )`",
+			"duration": 45,
+			"start": "2017-09-05T09:59:55.747Z",
+			"end": "2017-09-05T09:59:55.792Z",
+			"tests": [
+				{
+					"name": "should return empty array",
+					"start": "2017-09-05T09:59:55.747Z",
+					"end": "2017-09-05T09:59:55.791Z",
+					"duration": 44,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

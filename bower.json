@@ -23,5 +23,9 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"protype": "^0.24.0",
+		"truly": "^0.20.0"
+	}
 }

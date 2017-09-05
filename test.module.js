@@ -67,27 +67,104 @@ const path = require( "path" );
 
 
 //: @server:
-
 describe( "truky", ( ) => {
 
-} );
+	describe( "`truky( { 'name': 'simple' } )`", ( ) => {
+		it( "should return keys with truthful values", ( ) => {
+			assert.deepEqual( truky( { "name": "simple" } ), [ "simple" ] );
+		} );
+	} );
 
+	describe( "`truky( function Hello( ){ } )`", ( ) => {
+		it( "should return keys with truthful values", ( ) => {
+			assert.deepEqual( truky( function Hello( ){ } ), [ "Hello" ] );
+		} );
+	} );
+
+	describe( "`truky( { } )`", ( ) => {
+		it( "should return empty array", ( ) => {
+			assert.deepEqual( truky( { } ), [ ] );
+		} );
+	} );
+
+} );
 //: @end-server
 
 
 //: @client:
-
 describe( "truky", ( ) => {
 
-} );
+	describe( "`truky( { 'name': 'simple' } )`", ( ) => {
+		it( "should return keys with truthful values", ( ) => {
+			assert.deepEqual( truky( { "name": "simple" } ), [ "simple" ] );
+		} );
+	} );
 
+	describe( "`truky( function Hello( ){ } )`", ( ) => {
+		it( "should return keys with truthful values", ( ) => {
+			assert.deepEqual( truky( function Hello( ){ } ), [ "Hello" ] );
+		} );
+	} );
+
+	describe( "`truky( { } )`", ( ) => {
+		it( "should return empty array", ( ) => {
+			assert.deepEqual( truky( { } ), [ ] );
+		} );
+	} );
+
+} );
 //: @end-client
 
 
 //: @bridge:
-
 describe( "truky", ( ) => {
 
-} );
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
+	describe( "`truky( { 'name': 'simple' } )`", ( ) => {
+		it( "should return keys with truthful values", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( truky( { "name": "simple" } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ "simple" ] );
+		} );
+	} );
+
+	describe( "`truky( function Hello( ){ } )`", ( ) => {
+		it( "should return keys with truthful values", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( truky( function Hello( ){ } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ "Hello" ] );
+		} );
+	} );
+
+	describe( "`truky( { } )`", ( ) => {
+		it( "should return empty array", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( truky( { } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ ] );
+		} );
+	} );
+
+} );
 //: @end-bridge

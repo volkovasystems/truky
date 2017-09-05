@@ -63,11 +63,27 @@ const truky = require( "./truky.js" );
 
 
 //: @server:
-
 describe( "truky", ( ) => {
 
-} );
+	describe( "`truky( { 'name': 'simple' } )`", ( ) => {
+		it( "should return keys with truthful values", ( ) => {
+			assert.deepEqual( truky( { "name": "simple" } ), [ "simple" ] );
+		} );
+	} );
 
+	describe( "`truky( function Hello( ){ } )`", ( ) => {
+		it( "should return keys with truthful values", ( ) => {
+			assert.deepEqual( truky( function Hello( ){ } ), [ "Hello" ] );
+		} );
+	} );
+
+	describe( "`truky( { } )`", ( ) => {
+		it( "should return empty array", ( ) => {
+			assert.deepEqual( truky( { } ), [ ] );
+		} );
+	} );
+
+} );
 //: @end-server
 
 

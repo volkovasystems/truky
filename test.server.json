@@ -1,16 +1,60 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-09-04T08:18:17.437Z",
-    "end": "2017-09-04T08:18:17.437Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 4,
+		"tests": 3,
+		"passes": 3,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-09-05T09:59:20.056Z",
+		"end": "2017-09-05T09:59:20.063Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should return keys with truthful values",
+			"fullTitle": "truky `truky( { 'name': 'simple' } )` should return keys with truthful values",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return keys with truthful values",
+			"fullTitle": "truky `truky( function Hello( ){ } )` should return keys with truthful values",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return empty array",
+			"fullTitle": "truky `truky( { } )` should return empty array",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return keys with truthful values",
+			"fullTitle": "truky `truky( { 'name': 'simple' } )` should return keys with truthful values",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return keys with truthful values",
+			"fullTitle": "truky `truky( function Hello( ){ } )` should return keys with truthful values",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return empty array",
+			"fullTitle": "truky `truky( { } )` should return empty array",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
